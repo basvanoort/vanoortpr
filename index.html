@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bas van Oort | Projectregisseur</title>
+<meta name="description" content="Ik ben projectregisseur. Ik help organisaties om hun ambities waar te maken, juist als er veel partijen, belangen en onbekenden in het spel zijn.">
+<meta name="theme-color" content="#F4F1EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E1F3D;--sand:#C9A87C;--paper:#F4F1EC;--muted:#6B6356;--line:rgba(14,31,61,.14);--serif:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-decoration:none}a:hover{color:var(--muted)}
+p{text-wrap:pretty}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(24px,5vw,56px)}
+.mark{display:flex;flex-direction:column;align-items:center;gap:14px}
+.mark .name{font-family:var(--serif);font-weight:500;font-size:clamp(28px,4vw,40px);line-height:1;letter-spacing:-.005em}
+.role{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.36em;text-transform:uppercase;color:var(--muted)}
+.role i{display:block;width:28px;height:1px;background:var(--muted);opacity:.5}
+.role span{margin-right:-.36em}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(40px,7vh,72px) 0 clamp(32px,6vh,56px)}
+.hero-body{max-width:760px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center;gap:32px;padding:56px 0}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,6.4vw,76px);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+.lead{font-size:clamp(17px,1.6vw,19px);color:var(--muted);max-width:600px}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;background:var(--ink);color:var(--paper);font-size:13px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;transition:background .2s}
+.btn:hover{background:#1c3460;color:var(--paper)}
+.btn::after{content:"";width:18px;height:1px;background:var(--sand);transition:width .2s}
+.btn:hover::after{width:26px}
+.scroll{align-self:center;width:1px;height:48px;background:linear-gradient(var(--line),var(--muted))}
+section.block{border-top:1px solid var(--line);padding:clamp(64px,10vw,112px) 0}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:clamp(24px,5vw,72px)}
+.label{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);align-self:start;padding-top:10px}
+.label::before{content:"";width:28px;height:1px;background:var(--sand)}
+h2{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.01em;margin-bottom:28px;text-wrap:balance}
+.prose p{font-size:clamp(17px,1.5vw,19px);max-width:620px}
+.prose p+p{margin-top:1em}
+.list{list-style:none;display:flex;flex-direction:column}
+.list li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;padding:20px 0;border-top:1px solid var(--line);font-size:clamp(17px,1.5vw,19px)}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.list .n{font-family:var(--serif);font-style:italic;color:var(--sand);font-size:20px;line-height:1.45}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,40px)}
+.step{display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:1px solid var(--ink)}
+.step h3{font-family:var(--serif);font-weight:500;font-size:24px;line-height:1.2}
+.step p{color:var(--muted)}
+.contact{background:var(--ink);color:var(--paper);padding:clamp(72px,12vw,136px) 0;text-align:center}
+.contact .wrap{display:flex;flex-direction:column;align-items:center;gap:28px}
+.contact h2{color:var(--paper);margin:0}
+.contact p{color:rgba(244,241,236,.78);max-width:560px;font-size:clamp(17px,1.5vw,19px)}
+.contact .label{color:rgba(244,241,236,.7);padding:0}
+.lines{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px 28px;margin-top:12px;font-family:var(--serif);font-size:clamp(22px,2.6vw,30px)}
+.lines a{color:var(--paper);border-bottom:1px solid rgba(201,168,124,.6);padding-bottom:2px;transition:border-color .2s,color .2s}
+.lines a:hover{color:var(--sand);border-color:var(--sand)}
+.lines .sep{width:1px;height:24px;background:rgba(244,241,236,.3)}
+footer{background:var(--ink);border-top:1px solid rgba(244,241,236,.12);color:rgba(244,241,236,.7);font-size:13px;letter-spacing:.04em;padding:28px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px}
+footer .dot{opacity:.4}
+@media (max-width:760px){
+.grid{grid-template-columns:minmax(0,1fr)}
+.steps{grid-template-columns:minmax(0,1fr)}
+.lines .sep{display:none}
+.lines{flex-direction:column}
+footer .dot{display:none}footer .wrap{flex-direction:column;align-items:center;text-align:center}
+}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+<div class="mark">
+<div class="name">Bas van Oort</div>
+<div class="role"><i></i><span>Projectregisseur</span><i></i></div>
+</div>
+<div class="hero-body">
+<h1>Een mooi plan verdient goede regie</h1>
+<p class="lead">Ik ben projectregisseur. Ik help organisaties om hun ambities waar te maken, juist als er veel partijen, belangen en onbekenden in het spel zijn. Zodat iedereen weet waar het naartoe gaat en hoe je er samen komt.</p>
+<a class="btn" href="#contact">Maak kennis</a>
+</div>
+<div class="scroll" aria-hidden="true"></div>
+</header>
+<main>
+<section class="block" id="waarde">
+<div class="wrap grid">
+<div class="label">Waarde</div>
+<div>
+<h2>Wanneer ik van waarde ben</h2>
+<ul class="list">
+<li><span class="n">1</span><span>Je staat aan het begin van iets nieuws en wilt het vanaf de start goed neerzetten.</span></li>
+<li><span class="n">2</span><span>Er zijn meerdere partijen betrokken, elk met een eigen rol en eigen belangen.</span></li>
+<li><span class="n">3</span><span>De ambitie is helder, de route ernaartoe nog niet.</span></li>
+<li><span class="n">4</span><span>Een project vraagt om iemand die overzicht houdt, verbindt en bijstuurt.</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section class="block" id="wat-ik-doe">
+<div class="wrap grid">
+<div class="label">Werk</div>
+<div class="prose">
+<h2>Wat ik doe</h2>
+<p>Een wens wordt pas werkelijkheid als er ook perspectief is: een beeld van waar je naartoe gaat. Daar zit mijn werk. Ik zorg dat de juiste vraag op tafel ligt, dat partijen elkaar verstaan en dat er op het goede moment besluiten genomen worden. Ik neem de inhoud niet over en voeg geen extra laag toe aan je organisatie. Mijn belang is een project dat loopt en mensen die met energie samenwerken.</p>
+</div>
+</div>
+</section>
+<section class="block" id="werkwijze">
+<div class="wrap">
+<div class="grid" style="margin-bottom:clamp(32px,5vw,56px)">
+<div class="label">Werkwijze</div>
+<h2 style="margin:0">Zo werk ik</h2>
+</div>
+<div class="steps">
+<div class="step"><h3>Projectscan</h3><p>In korte tijd breng ik in kaart waar je project staat, wat er speelt en wat nodig is om het goed te laten landen.</p></div>
+<div class="step"><h3>Verkenning</h3><p>Waar nodig onderzoeken we samen welke route het meest kansrijk is.</p></div>
+<div class="step"><h3>Regie</h3><p>Op dagbasis, zo lang als nodig. En niet langer.</p></div>
+</div>
+</div>
+</section>
+<section class="block" id="over-mij">
+<div class="wrap grid">
+<div class="label">Over mij</div>
+<div class="prose">
+<h2>Over mij</h2>
+<p>Ik heb ruim twintig jaar ervaring in regie binnen media en broadcast: live producties waarin alles tegelijk gebeurt, niets twee keer kan en veel disciplines op hetzelfde moment dezelfde kant op moeten. Met een technische basis in ICT en een scherp oog voor mensen zet ik die ervaring in bij uiteenlopende projecten. Ik ben gevestigd op de Veluwe en werk waar het project mij nodig heeft.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap">
+<div class="label">Contact</div>
+<h2>Benieuwd wat ik voor jouw project kan betekenen?</h2>
+<p>Bel of mail me voor een kennismaking. Vrijblijvend en zonder verkooppraatje.</p>
+<div class="lines">
+<a href="mailto:bas@vanoortpr.nl">bas@vanoortpr.nl</a>
+<span class="sep" aria-hidden="true"></span>
+<a href="tel:+31641858954">06 41 85 89 54</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<span>Bas van Oort</span><span class="dot">|</span><span>Projectregisseur</span><span class="dot">|</span><span>Uddel</span><span class="dot">|</span><span>KvK 39089560</span>
+</div>
+</footer>
+</body>
+</html>
